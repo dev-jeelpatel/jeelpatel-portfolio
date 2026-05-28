@@ -47,26 +47,37 @@ export function ProjectCard({ project, featured, className }: ProjectCardProps) 
         <div className="relative flex flex-col md:flex-row gap-0">
           {/* Image panel */}
           <div className="md:w-2/5 shrink-0 relative overflow-hidden bg-white/[0.03] min-h-[200px] md:min-h-[280px]">
-            <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 to-zinc-900/60" />
+            {project.image ? (
+              /* eslint-disable-next-line @next/next/no-img-element */
+              <img
+                src={project.image}
+                alt={project.title}
+                className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+              />
+            ) : (
+              <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 to-zinc-900/60" />
+            )}
             {/* Decorative grid */}
             <div
-              className="absolute inset-0 opacity-10"
+              className="absolute inset-0 opacity-20 pointer-events-none"
               style={{
                 backgroundImage:
-                  "linear-gradient(rgba(239,68,68,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(239,68,68,0.3) 1px, transparent 1px)",
+                  "linear-gradient(rgba(239,68,68,0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(239,68,68,0.2) 1px, transparent 1px)",
                 backgroundSize: "32px 32px",
               }}
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center px-6">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-red-500/20 border border-red-500/30 mb-3">
-                  <Sparkles className="w-7 h-7 text-red-400" />
+            {!project.image && (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center px-6">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-red-500/20 border border-red-500/30 mb-3">
+                    <Sparkles className="w-7 h-7 text-red-400" />
+                  </div>
+                  <p className="text-xs text-red-400/60 font-mono uppercase tracking-widest">
+                    Featured Project
+                  </p>
                 </div>
-                <p className="text-xs text-red-400/60 font-mono uppercase tracking-widest">
-                  Featured Project
-                </p>
               </div>
-            </div>
+            )}
           </div>
 
           {/* Content panel */}

@@ -44,13 +44,14 @@ export const education: EducationEntry[] = [
     gpa: "8.5 / 10",
     website: "https://example.edu",
   },
+
   {
-    id: "highschool",
-    degree: "Diploma of Engineering",
-    field: "Computer Science",
-    institution: "Shri K J Polytechnic",
-    location: "Bharuch, Gujarat",
-    period: "2020 – 2023",
+    id: "minor-robotics",
+    degree: "Minor in Robotics",
+    field: "Robotics",
+    institution: "G H Patel College of Engineering & Technology",
+    location: "Anand, Gujarat",
+    period: "2023 – 2025",
     startYear: 2020,
     endYear: 2023,
     description:
@@ -61,17 +62,17 @@ export const education: EducationEntry[] = [
       "Merit Scholarship Recipient",
     ],
     courses: ["Mathematics", "Physics", "Chemistry", "Computer Science"],
-    gpa: "7.9 / 10",
+    gpa: "7.5 / 10",
   },
   {
-    id: "secondary",
-    degree: "Secondary School Certificate",
-    field: "General Studies",
-    institution: "Your School Name",
-    location: "City, State",
-    period: "2017 – 2019",
-    startYear: 2017,
-    endYear: 2019,
+    id: "diploma",
+    degree: "Diploma of Engineering",
+    field: "Computer Engineering",
+    institution: "Shri K J Polytechnic",
+    location: "Bharuch, Gujarat",
+    period: "2020 – 2023",
+    startYear: 2020,
+    endYear: 2023,
     description:
       "Built a strong academic foundation across Science, Mathematics and the Arts. First exposure to programming through school computer science classes.",
     achievements: [
@@ -81,5 +82,22 @@ export const education: EducationEntry[] = [
     courses: ["Mathematics", "Science", "Social Studies", "Computer Basics"],
     gpa: "92.8%",
   },
-
+  {
+    id: "highschool",
+    degree: "Secondary School Certificate",
+    field: "General Studies",
+    institution: "Shree K.S.K.P Highschool",
+    location: "Surat, Gujarat",
+    period: "2019 – 2020",
+    startYear: 2019,
+    endYear: 2020,
+    description:
+      "Description of your studies, projects, and other relevant academic activities.",
+    achievements: [
+      "Achievement 1",
+      "Achievement 2",
+    ],
+    courses: ["Course 1", "Course 2"],
+    gpa: "Your GPA",
+  },
 ];
