@@ -1,10 +1,10 @@
 import { SiteConfig } from "~/types/data";
 
 export const siteConfig: SiteConfig = {
-  title: "Abhay Rana — Full Stack Developer",
+  title: "Jeel Patel — Full Stack Developer",
   description:
     "Full Stack Developer specializing in React, Next.js, and Node.js. Building exceptional digital experiences with modern web technologies.",
-  url: "https://www.abhayrana.com",
+  url: "https://www.jeelpatel.com",
   ogImage: "/og-image.png",
-  author: "Abhay Rana",
+  author: "Jeel Patel",
 };

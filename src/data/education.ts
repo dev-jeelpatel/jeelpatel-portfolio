@@ -29,17 +29,16 @@ export const education: EducationEntry[] = [
       "Focused on software engineering, algorithms, and distributed systems. Participated in multiple hackathons and led the college coding club.",
     achievements: [
       "Graduated with Distinction",
-      "Best Final Year Project Award",
-      "2× Hackathon Winner",
-      "College Coding Club President",
+      "IoT 360 Winner",
+      "Hackathon Winner",
     ],
     courses: [
       "Data Structures & Algorithms",
       "Operating Systems",
       "Database Systems",
       "Computer Networks",
-      "Machine Learning",
       "Web Technologies",
+      "Aritifical Intelligence & Machine Learning",
     ],
     gpa: "8.5 / 10",
     website: "https://example.edu",
@@ -57,11 +56,9 @@ export const education: EducationEntry[] = [
     description:
       "Completed senior secondary education with specialisation in Science and Mathematics. Consistently ranked in the top percentile of the class.",
     achievements: [
-      "School Topper in Mathematics",
-      "State Level Science Olympiad — Finalist",
-      "Merit Scholarship Recipient",
+      "Graduated with Distinction",
     ],
-    courses: ["Mathematics", "Physics", "Chemistry", "Computer Science"],
+    courses: ["Robotics", "Automation", "Robotics Kinematics", "Mechatronics", "Machine Learning"],
     gpa: "7.5 / 10",
   },
   {
@@ -79,8 +76,8 @@ export const education: EducationEntry[] = [
       "School Rank 3 — Board Exams",
       "Best Student Award (2018–19)",
     ],
-    courses: ["Mathematics", "Science", "Social Studies", "Computer Basics"],
-    gpa: "92.8%",
+    courses: ["Web Development", "C/C++", "Java", "DBMS", "Computer Networks", "Operating System", "Software Engineering"],
+    gpa: "7.9 / 10",
   },
   {
     id: "highschool",
@@ -94,10 +91,11 @@ export const education: EducationEntry[] = [
     description:
       "Description of your studies, projects, and other relevant academic activities.",
     achievements: [
-      "Achievement 1",
-      "Achievement 2",
+      "Score 92.8 percentile in SSC Board Exams",
+      "Second rank in class"
     ],
-    courses: ["Course 1", "Course 2"],
-    gpa: "Your GPA",
+    courses: ["Mathematics", "Science", "Social Science", "English", "Gujarati", "Computer Fundamentals"],
+    gpa: "73%",
   },
+
 ];

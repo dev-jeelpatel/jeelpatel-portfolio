@@ -80,7 +80,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: post.title,
       description: post.description,
-      creator: "@Ranaji_0x",
+      creator: "@jeelpatel",
       images: post.coverImage ? [post.coverImage] : undefined,
     },
   };
