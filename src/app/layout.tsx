@@ -5,6 +5,7 @@ import { StarField } from "~/components/effects/StarField";
 import { AntiCopy } from "~/components/effects/AntiCopy";
 import { Navbar } from "~/components/ui/Navbar";
 import { Footer } from "~/components/ui/Footer";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const inter = Inter({
@@ -72,6 +73,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
