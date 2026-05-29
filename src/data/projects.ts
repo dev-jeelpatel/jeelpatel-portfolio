@@ -7,8 +7,8 @@ export const projects: Project[] = [
     description:
       "Developed a full-stack shop management web application enabling shop owners to efficiently track, add, and maintain inventory in real time. Implemented secure user authentication and role-based access control for admin and staff users. Built a comprehensive admin panel for managing products, stock levels, and customer purchase entries. Integrated payment processing and automated bill generation to streamline the customer checkout workflow.",
     techStack: ["MongoDB", "Express.js", "React.js", "Node.js"],
-    liveUrl: "https://cdn.dribbble.com/userupload/46725995/file/5a78bb0bba9fc00466174a6e463903c0.png?resize=1024x768&vertical=center",
-    image: "https://loremflickr.com/800/600/shop,store",
+    liveUrl: "#",
+    image: "#",
     featured: true,
     highlights: [
       {
@@ -40,8 +40,8 @@ export const projects: Project[] = [
       "Developed a full-stack e-commerce clothing web application using the MERN stack, allowing customers to browse, purchase, and place orders for clothing products with a smooth and responsive shopping experience. Implemented secure user authentication and session management, alongside a dynamic admin panel enabling administrators to manage product listings and update order statuses in real time. Integrated a payment gateway to facilitate seamless and secure online transactions, ensuring a reliable and efficient checkout experience for customers.",
     techStack: ["MongoDB", "Express.js", "React.js", "Node.js"],
     githubUrl: "https://github.com/yourusername/your-ecommerce-repo",
-    liveUrl: "https://your-ecommerce-live-url.com",
-    image: "https://loremflickr.com/800/600/fashion,ecommerce",
+    liveUrl: "#",
+    image: "#",
     featured: true,
     highlights: [
       {
@@ -73,8 +73,8 @@ export const projects: Project[] = [
       "Developed a full-stack travel planning platform that centralizes itinerary management, budget tracking, packing checklists, and travel journaling within a modern and responsive user interface. Built interactive trip planning features with Leaflet maps, expense visualization dashboards using Recharts, and community-sharing functionality for discovering and cloning public itineraries. Implemented secure authentication and role-based access control (RBAC) using JWT and bcryptjs, along with a dedicated Admin Console for analytics, user management, and platform oversight. Strengthened backend security through Helmet, strict CORS policies, request sanitization, rate limiting, and robust input validation. Designed a normalized relational database schema using Prisma ORM with SQLite for development and MySQL production readiness.",
     techStack: ["React.js", "Vite", "Tailwind CSS", "Node.js", "Express.js", "Prisma", "MySQL", "JWT", "Leaflet.js"],
     githubUrl: "https://github.com/yourusername/traveloop",
-    liveUrl: "https://your-traveloop-live-url.com",
-    image: "https://loremflickr.com/800/600/travel,journey",
+    liveUrl: "#",
+    image: "#",
     featured: true,
     highlights: [
       {
