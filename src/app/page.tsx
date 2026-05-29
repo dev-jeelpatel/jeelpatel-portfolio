@@ -8,14 +8,12 @@ import { Education } from "~/components/sections/Education";
 import { ResumeCTA } from "~/components/sections/ResumeCTA";
 import { Contact } from "~/components/sections/Contact";
 
-import { getProfileImages } from "~/lib/profile";
-
 export default function Home() {
   return (
     <>
       <CursorFollower />
       <Hero />
-      <About profileImages={getProfileImages()} />
+      <About />
       <Experience />
       <TechStack />
       <Projects />
