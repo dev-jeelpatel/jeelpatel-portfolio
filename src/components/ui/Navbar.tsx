@@ -28,7 +28,7 @@ export function Navbar() {
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-1">
-            {navItems.map((item) => {
+            {navItems.filter((item) => item.label !== "Resume").map((item) => {
               const isActive = isHome
                 ? activeSection === item.href.replace("#", "")
                 : item.href === "#blog" && pathname.startsWith("/blog");
@@ -54,14 +54,10 @@ export function Navbar() {
                 </Link>
               );
             })}
-            <a
-              href={personalInfo.resumeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-3 py-1.5 text-sm font-medium rounded-xl text-red-400 hover:bg-red-500/10 transition-colors"
-            >
-              Resume
-            </a>
+            <span className="inline-flex items-center gap-1.5 ml-1 px-3 py-1.5 rounded-full border border-green-500/30 bg-green-500/10 text-xs font-medium text-green-400">
+              <span className="h-1.5 w-1.5 rounded-full bg-green-400 animate-pulse" />
+              Open to work
+            </span>
           </div>
 
           {/* Mobile toggle */}
@@ -75,7 +71,7 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile full-screen overlay */}
+      {/* Mobile menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -86,7 +82,7 @@ export function Navbar() {
             className="md:hidden mt-2 rounded-2xl bg-zinc-900/95 backdrop-blur-xl border border-zinc-800 p-4"
           >
             <div className="flex flex-col gap-1">
-              {navItems.map((item) => {
+              {navItems.filter((item) => item.label !== "Resume").map((item) => {
                 const isActive = isHome
                   ? activeSection === item.href.replace("#", "")
                   : item.href === "#blog" && pathname.startsWith("/blog");
@@ -106,15 +102,10 @@ export function Navbar() {
                   </Link>
                 );
               })}
-              <a
-                href={personalInfo.resumeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setIsOpen(false)}
-                className="px-4 py-3 rounded-xl text-base font-bold transition-all text-red-400 hover:bg-red-500/10"
-              >
-                Resume
-              </a>
+              <div className="mt-2 px-4 py-3 rounded-xl border border-green-500/30 bg-green-500/10 flex items-center gap-2">
+                <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
+                <span className="text-sm font-medium text-green-400">Open to work</span>
+              </div>
             </div>
           </motion.div>
         )}
