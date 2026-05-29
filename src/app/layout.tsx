@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono, Lora, Playfair_Display } from "next/font/google";
 import { siteConfig } from "~/data/site-config";
 import { StarField } from "~/components/effects/StarField";
+import { AntiCopy } from "~/components/effects/AntiCopy";
 import { Navbar } from "~/components/ui/Navbar";
 import { Footer } from "~/components/ui/Footer";
 import "./globals.css";
@@ -65,6 +66,7 @@ export default function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} ${playfair.variable} ${lora.variable} font-sans antialiased bg-[#0a0a0a] text-[#fafafa]`}
       >
         <StarField />
+        <AntiCopy />
         <Navbar />
         <main className="relative z-10 pt-16">
           {children}
