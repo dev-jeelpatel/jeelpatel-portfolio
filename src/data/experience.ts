@@ -7,7 +7,7 @@ export const experience: Experience[] = [
     role: "Full Stack Intern",
     period: "Jan 2026 - Present",
     location: "Surat, GJ",
-    website: "https://www.stantech.ai/",
+    website: "https://drive.google.com/file/d/1bB9YhiCMqjXvY-6KhykQPiorAPgg3b0_/view?usp=drive_link",
     highlights: [
       "Led frontend development of a no-code form builder SaaS enabling MSMEs to build customizable dynamic forms",
       "Designed reusable, responsive component libraries, accelerating feature delivery across teams",
@@ -22,7 +22,7 @@ export const experience: Experience[] = [
     role: ".NET Intern",
     period: "June 2025 - July 2025",
     location: "Ahmedabad",
-    website: "http://quantxindia.com/",
+    website: "https://drive.google.com/file/d/1mR9WLzTPVYsgz1LYDGY6lzXs3Dex1mP-/view?usp=drive_link",
     highlights: [
       "Integrated TradingView Advanced Charting Library to provide interactive financial charts with technical indicators",
       "Developed and optimized a real-time trading platform using React, TypeScript, and WebSockets for high-frequency data updates",
@@ -36,7 +36,7 @@ export const experience: Experience[] = [
     role: "Java Developer",
     period: "May 2025 - June 202s",
     location: "Remote",
-    website: "https://hksmanpower.com/",
+    website: "https://drive.google.com/file/d/1Iq4xHKT5qWv8o9owH3A2hG6UsSD6vjjL/view?usp=drive_link",
     highlights: [
       "Led frontend architecture decisions, improving scalability and development efficiency",
       "Reduced engineering workload by 20% by building a production-ready React & React Native boilerplate",
